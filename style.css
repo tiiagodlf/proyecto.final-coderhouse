@@ -26,6 +26,7 @@ grid-column-gap:15px ;
 width: 100%;
 height: 100vh;
 box-sizing: border-box;
+
 }
 
 
@@ -36,7 +37,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation-name: color ;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
     
+
+ }
+ 
+ @keyframes color{
+    0% {
+        background-color: gray;
+    }
+    100% {
+        background-color: cornflowerblue;
+    }
  }
 
 header h1 {
@@ -77,23 +91,50 @@ margin: 0 20px;
 footer {
     grid-area: mifooter;
     background-color: lightsteelblue;
-    font-size: 20px
+    font-size: 20px;
+    transition: border-radius 3s;
+    transition-duration: 2s;
+    
 }
+footer:hover {
+    border-radius: 100%;
+}
+
 
 section#conocenos {
     grid-area: conocenos;
     background-color:darkkhaki
     ;
+   
+    
+
+}
+
+
+
+
+
+
+ 
+
+
+
+section#novedades {
+    grid-area: novedades;
+    background-color: cadetblue;
+    transition: border-radius 3s, width 10s;
+    transition-duration: 2s;
+    
+
+} 
+#novedades:hover {
+    border-radius: 100%;
+    width: 600px;
+    
     
     
 
 }
-    
-    
-section#novedades {
-    grid-area: novedades;
-    background-color: cadetblue;
-} 
   
 section#formulario {
     border-style: groove;
@@ -107,12 +148,25 @@ color: black;
 
 .contacto {
     display: flex;
+
 }
+
+  section#pañales {
+    background-color:aqua;
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+
+}
+  @keyframes mover {
+    0% {
+        transform:translate(0%)
+    }
+    100% {
+        transform: translate(100%);
+    }
  
-  
- 
- 
-   
+   }
  
 
  @media screen and (min-width: 360px) and (max-width: 760px) { 
