@@ -9,260 +9,36 @@ html,body {
 }
     
 
-.padre{
-    
-display: grid;
-grid-template-areas: 
-"miheader miheader"
-"conocenos conocenos"
-"novedades novedades"
- "mifooter mifooter"
-;
-
-grid-template-columns: auto 250px;
-grid-template-rows: 80px 1fr 1fr 60px;
-grid-row-gap: 15px ;
-grid-column-gap:15px ;
-width: 100%;
-height: 100vh;
-box-sizing: border-box;
-
-}
-
-
-
 header {
-    grid-area: miheader;
-    background-color: lightskyblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation-name: color ;
-    animation-duration: 3s;
-    animation-iteration-count: 3;
-    
-
- }
- 
- @keyframes color{
-    0% {
-        background-color: gray;
-    }
-    100% {
-        background-color: cornflowerblue;
-    }
- }
-
-header h1 {
-    font-size: 20px;
-    color: black;
-    
-
-    font-family: Arial, Helvetica, sans-serif;
-    
+    background-color: gray;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     border-style: groove;
+     
 }
-
-header nav ul li a {
-    font-size: 20px;
-    text-decoration:overline;
-    text-align: left;
-    
-    
-
-}
-
-nav ul li a:hover {color: black;
-    
-}
-    
-    
-
-
-
-
-
-header nav ul li {
-    display: inline-block;
-list-style: none;
-margin: 0 20px;
-
-}
-
-footer {
-    grid-area: mifooter;
-    background-color: lightsteelblue;
-    font-size: 20px;
-    transition: border-radius 3s;
-    transition-duration: 2s;
-    
-}
-footer:hover {
-    border-radius: 100%;
-}
-
-
-section#conocenos {
-    grid-area: conocenos;
-    background-color:darkkhaki
-    ;
-   
-    
-
-}
-
-
-
-
-
-
- 
-
-
-
-section#novedades {
-    grid-area: novedades;
-    background-color: cadetblue;
-    transition: border-radius 3s, width 10s;
-    transition-duration: 2s;
-    
-
-} 
-#novedades:hover {
-    border-radius: 100%;
-    width: 600px;
-    
-    
-    
-
-}
-  
-section#formulario {
-    border-style: groove;
-    color:black;
-    
-    
-}
-section#formulario:hover {
+header nav li a {
 color: black;
 }
+a:hover {
+    background-color: black;
+}
 
-.contacto {
-    display: flex;
+.container {
+    text-align: center;
+    background-color: darkseagreen;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+}
+p{
+    background-color:burlywood;
+    
 
 }
 
-  section#pañales {
-    background-color:aqua;
-    animation-name: mover;
-    animation-duration: 5s;
-    animation-iteration-count: 3;
-
-}
-  @keyframes mover {
-    0% {
-        transform:translate(0%)
-    }
-    100% {
-        transform: translate(100%);
-    }
- 
-   }
- 
-
- @media screen and (min-width: 360px) and (max-width: 760px) { 
-.padre  {
-    display: grid;
-grid-template-areas: 
-"miheader"
-"conocenos"
-"novedades"
- "mifooter"
-;
-
-
-background-color: gray;
-font-family: Georgia, 'Times New Roman', Times, serif;
-padding: 0%;
-
-
-}
-
-section#conocenos {
-    background-color:darkorange;
-    
-    
-}
-header  {
-    background-color: gray;
-    text-align: left;
-    flex-direction: column;
-    
-    
-    
-    
-}
-.contacto {
-    background-color: aquamarine;
-
-}
-
-.informacion {
-    background-color: gray;
-    
-}
 footer {
-    background-color:aquamarine;
-    
-}
-
-  }
-
-  @media screen and (min-width: 760px) and (max-width: 1020px) {
-    .padre  {
-        display: grid;
-    grid-template-areas: 
-    "miheader"
-    "conocenos"
-    "novedades"
-     "mifooter"
-    ;
-    
-    
-    background-color: gray;
+    background-color: darksalmon;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    
-    }
-    section#conocenos {
-        background-color:khaki;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
-        
-    }
-    header {
-        background-color:cadetblue;
-        text-align: left;
-        font-family: fantasy;
-        
-        
-        
-    }
-    .contacto {
-        background-color: gray;
-        font-family: fantasy;
-        text-align: justify;
-    
-    }
-    
-    .informacion {
-        background-color:cornsilk;
-        font-family: fantasy;
-        
-    }
-    footer {
-        background-color:gray;
-        
-    }
-
-  }
- 
+}
+h1 {
+    color:cornflowerblue
+}
