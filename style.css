@@ -7,7 +7,7 @@ html,body {
     width: 100%;
     height: 100vh;
 }
-    
+  
 
 header {
     background-color: gray;
@@ -40,5 +40,54 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1 {
-    color:cornflowerblue
+    color:cornflowerblue;
+    
+    
 }
+@media screen and (min-width: 300px) and (max-width: 760px) {
+
+    
+    header {
+        background-color:darkslategrey;
+     font-family: fantasy;
+     }
+.container img {
+    width: 100%;
+}
+.container {
+    background-color:darkseagreen;
+}
+header nav ul li{
+    display: inline-block;
+    color: aliceblue;
+
+}
+header nav ul li a {
+    display: block;
+    padding: 10px;
+    color: aliceblue;
+}
+header nav ul li a:hover {
+    color: black;
+}
+footer h1 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+    
+}
+
+@media screen and (min-width: 760px) and (max-width: 1020px){
+    .container img {
+        width: 100%;
+    }
+.container {
+    background-color:cadetblue;
+}
+footer h1 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+}
+ 
