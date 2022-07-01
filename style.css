@@ -26,11 +26,38 @@ a:hover {
     text-align: center;
     background-color: darkseagreen;
     font-family:Arial, Helvetica, sans-serif;
-    
-
 }
+footer p  {
+    background-color: darkgray;
+    font-size: 10px;
+}
+
+.container img {
+border-radius: 30%;
+animation-name: animacion;
+animation-duration:8s;
+}
+
+@keyframes animacion {
+ 0%{
+    transform: scale(1)
+}
+25%{
+    transform: scale(0.5)
+}
+50%{
+    transform: scale(1.1)
+}
+
+100%{
+    transform: scale(1)
+}
+}
+
+
 p{
     background-color:burlywood;
+    font-size: 20px;
     
 
 }
@@ -46,8 +73,10 @@ h1 {
 }
 @media screen and (min-width: 300px) and (max-width: 760px) {
 
-    
-    header {
+h1 {
+    background-color: black;
+} 
+.header {
         background-color:darkslategrey;
      font-family: fantasy;
      }
@@ -88,6 +117,9 @@ footer h1 p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
+h1 {
+    background-color: black;
+} 
 
 }
  
