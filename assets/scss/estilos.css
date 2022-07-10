@@ -8,7 +8,10 @@
     background-color: aquamarine; }
 
 footer {
-  font-family: Georgia, 'Times New Roman', Times, serif; }
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  
+
+}
 
 h1 {
   color: cornflowerblue; }
@@ -34,7 +37,6 @@ h1 {
     transform: scale(1); } }
 
 p {
-  background-color: burlywood;
   font-size: 20px; }
 
 header {

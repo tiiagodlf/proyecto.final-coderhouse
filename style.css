@@ -7,10 +7,28 @@ html,body {
     width: 100%;
     height: 100vh;
 }
+.padre{
+    
+    display: grid;
+    grid-template-areas: 
+    "miheader"
+    "conocenos"
+    "novedades"
+     "mifooter"
+    ;
+    
+    grid-template-columns: auto;
+    grid-template-rows: 80px 1fr 1fr 60px;
+    grid-row-gap: 15px ;
+    grid-column-gap:15px ;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    
+    }
 .navegacion {
 list-style: none;
 background-color: aliceblue;
-
 }
 .navegacion ul li {
     display: inline-block;
@@ -21,12 +39,10 @@ background-color: aliceblue;
 
 }
   
-
 header {
-    background-color:deepskyblue;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     border-style: groove;
-     
+background-color:deepskyblue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-style: groove;  
 }
 header nav li a {
 color: black;
@@ -45,11 +61,21 @@ a:hover {
 footer p  {
     background-color: darkgray;
     font-size: 20px;
+    margin-top: auto;
+    
 }
 footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
+    box-sizing: border-box;
 }
+.mifooter {
+text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
 
 .container img {
 border-radius: 30%;
@@ -59,7 +85,7 @@ animation-duration:8s;
 
 section#formulario {
     color:black;
-    margin: 0 auto;
+    margin: 0;
     width: 400px;
     background-color:dodgerblue;
     padding: 10px;
@@ -95,45 +121,50 @@ color: white;
 }
 
 
-p{
-    background-color:beige;
-    font-size: 20 }
+p {
+    font-size: 20;
+    color: black;
+
+}
 
 footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
+    
 }
 h1 {
     color:cornflowerblue;
 }
 
-
+.menu {
+    position: relative;
+}
 
 
 @media screen and (min-width: 300px) and (max-width: 760px) {
 
 h1 {
-    background-color: black;
+    color: burlywood;
 } 
 .header {
-        background-color:darkslategrey;
+    background-color:darkslategrey;
      font-family: fantasy;
      }
 .container img {
     width: 100%;
 }
 .container {
-    background-color:darkseagreen;
+    background-color:cornflowerblue;
 }
 header nav ul li{
     display: inline-block;
-    color: aliceblue;
+
 
 }
 header nav ul li a {
     display: block;
     padding: 10px;
-    color: aliceblue;
+   
 }
 header nav ul li a:hover {
     color: black;
@@ -141,6 +172,9 @@ header nav ul li a:hover {
 footer h1 p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
+}
+.padre {
+
 }
     
 }
@@ -159,6 +193,12 @@ footer h1 p {
 h1 {
     background-color: black;
 } 
+.padre {
+
+}
+.navegacion {
+    
+}
 
 }
  
