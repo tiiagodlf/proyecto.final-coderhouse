@@ -25,7 +25,13 @@ html,body {
     height: 100vh;
     box-sizing: border-box;
     
-    }
+}
+
+.padre {
+    background-color: cadetblue;
+}
+
+
 .navegacion {
 list-style: none;
 background-color: aliceblue;
@@ -49,11 +55,15 @@ color: black;
 list-style: none;
 }
 
+header img {
+    width: 300px;
+}
+
 a:hover {
     background-color:darkkhaki;
 }
 
-.container {
+.container-lg {
     text-align: center;
     background-color:cadetblue;
     font-family:Arial, Helvetica, sans-serif;
@@ -77,10 +87,11 @@ width: 100%;
 }
 
 
-.container img {
+.container-lg img {
 border-radius: 30%;
 animation-name: animacion;
 animation-duration:8s;
+padding: 5px;
 }
 
 section#formulario {
@@ -136,11 +147,27 @@ h1 {
     color:cornflowerblue;
 }
 
+h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
 .menu {
     position: relative;
 }
-.horarios {
+
+.contacto p {
+    background-color: cadetblue;
     
+}
+
+.horarios {
+    background-color: cadetblue;
+}
+
+.horarios li a {
+    font-size: 20px;
 }
 
 
@@ -177,7 +204,29 @@ footer h1 p {
     color: white;
 }
 .padre {
+    background-color: darkcyan;
+    
+}
 
+.padre img {
+    background-color: darkcyan;
+    width: 100%;
+    
+}
+
+.container-lg {
+    background-color:cornflowerblue;
+}
+.container-lg img {
+    width: 100%;
+}
+
+.horarios {
+    background-color: cadetblue;
+}
+
+.horarios li a {
+    font-size: 20px;
 }
     
 }
@@ -196,11 +245,34 @@ footer h1 p {
 h1 {
     background-color: black;
 } 
-.padre {
 
+.padre {
+    background-color: darkcyan;
+    
+}
+
+.padre img {
+    background-color: darkcyan;
+    width: 100%;
+    
 }
 .navegacion {
     
+}
+
+.container-lg {
+    background-color:coral;
+}
+.container-lg img {
+    width: 100%;
+}
+
+.horarios {
+    background-color: cadetblue;
+}
+
+.horarios li a {
+    font-size: 20px;
 }
 
 }
