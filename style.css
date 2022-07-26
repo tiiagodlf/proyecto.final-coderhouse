@@ -189,6 +189,15 @@ h2 {
 
 .horarios li a {
     font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.horarios p {
+    color: blue;
+    text-decoration:underline;
+    padding: 2px;
+    margin: 2px;
 }
 
 .toogle-menu {
@@ -206,6 +215,7 @@ h2 {
 img {
     max-width: 100%;
 }
+
 
 
 
