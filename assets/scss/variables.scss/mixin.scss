@@ -1,0 +1,25 @@
+@mixin footer($c1,$c2,) {
+    color: $c1;
+    font-family: $c2;
+
+}
+
+footer {
+    @include footer(aliceblue, Arial )
+    
+}
+
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+map-get($map: $font-sizes, $key:"small" );
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    @extend .flex-center;
+    justify-content: space-between;
+    padding: 1em;
+}

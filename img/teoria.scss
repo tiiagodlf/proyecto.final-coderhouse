@@ -1,0 +1,177 @@
+
+// Variables y Operaciones
+
+$ancho: 720px;
+$blue: #4285F4;
+$green: #33D374; w
+
+.box_uno {
+         background-color: $blue;
+          width: $ancho/2; /* Ancho de 360*/
+}
+.box_dos {
+            background-color: $green;
+             width: ($ancho/2)-50;
+}
+
+
+// Condicionales
+/* == != <= >=
+@if comp1 == comp2 {
+    // ejecuto
+}
+     2    == 4
+@if comp1 == comp2 {
+    // ejecuto codigo
+} @else {
+    // ejecuto codigo 2
+}
+
+     6  >= 15
+@if comp1 >= comp2 {
+    // ejecuto codigo
+    >= 10
+} @else if comp3 == comp4 {
+    //ejecuto codigo
+} @else {
+    //ejecuto codigo
+}
+*/
+$button: 'red';
+
+.btn-succeed {
+    color: white;
+
+    @if $button == 'red' {
+        background-color: red;
+    } @else if $button == 'blue' {
+        background-color: blue;
+    } @else if $button == 'black' {
+        background-color: black;
+    } @else {
+        background-color: green;
+    }
+}
+
+// Bucle FOR
+/*
+  to = Equivale a un "menor" (a < b)
+  through = Equivale a un "menor igual" (a <= b)
+*/
+@for $variable from <start> to|through <end> {
+	// Codigo
+}
+
+@for $i from 1 through 10 {
+	.col-#{$i}{
+	  width:10% * $i;
+	}
+}
+
+
+// Bucle EACH
+@each $key, $var in <list> {
+  //Bloque de reglas donde podremos utilizar $var mediante interpolación
+}
+
+@each $valor in blue, yellow, black {
+	.#{$color}{
+	color:#{$color};
+	}
+}
+
+
+// Maps => Muchas variables agrupadas en una variable general.
+$map: (key1: value1, key2: value2, key3: value3);
+
+$redes: (
+  twitter: #55acee,
+  facebook:  #3a5795,
+  send-mail: #C25E30
+);
+
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}
+
+.color-twitter {
+  color: map-get($redes, twitter);
+}
+
+// Extend
+.btn {
+	width:200px;
+	height:50px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius:20px;
+	border:1px solid black;
+}
+
+.btn-success{
+	@extend .boton;
+	background-color:green;
+	color:yellow;
+}
+
+// Mixins (Parecido a extend pero acepta parametros o argumentos)
+@mixin primary-button($font-color, $background-color-left, $background-color-right) {
+  background: linear-gradient(240deg, $background-color-left 50%, $background-color-right 50%);
+  background-position: right bottom;
+  background-size: 240% 100%;
+  border-radius: 0.1875rem;
+  color: $font-color;
+  font-family: $main-font-bold;
+  font-size: .875rem;
+  min-width: 13.125rem;
+  padding: 1rem 2.125rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-position: left bottom;
+  }
+}
+
+.primary-button-purple {
+  a {
+    @include primary-button($color-white, $color-affair, $color-clairvoyant);
+  }
+}
+
+.primary-button-yellow {
+  a {
+    @include primary-button($color-slate-dark, $color-sunglow, $color-fuel-yellow);
+  }
+}
+
+/*
+1- Definir 5 variables principales de tu sitio. Fuente, color principal, color secundario, color de hipervinculo, color de contraste.
+2- Crea el html para el body, h, p, y a, utilizando las variables anteriormente mencionadas.
+3- Crea una lista de colores de los botones a usar en tu sitio. Deben tener key:value (nombre del color, codigo de color x ejemplo).
+4- Crea la configuración básica y por defecto de tu boton en una clase 'button' (Debe incluir color de fondo y texto por defecto).
+5- Usando la lista del punto 3, crea las variantes de colores de tus botones. Deben heredar el codigo del boton por defecto.
+6- Crear un mixin al cual le pasaremos un color de texto y un color de nuestra lista del punto 3 y nos creará una caja con fondo con dicho color y color de texto, de 100px por 100px y con margen de 20px. Atención: Usar map-get() para obtener el color de la lista.
+
+(Punto 6)
+$redes: (
+  twitter: #55acee,
+  facebook:  #3a5795,
+  send-mail: #C25E30
+);
+
+@mixin background-card ($bg-color, $font-color) {
+    background-color: $bg-color;
+    width: 100px;
+    height: 100px;
+    color: $font-color;
+    margin: 20px;
+}
+
+.card-twitter {
+    @include background-card(map-get($redes, twitter), '#ffffff');
+}
