@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contactos</title>
+    <meta name="description" content="venta de panales a todo publico">
+    <meta name="keywords" content="panales,accesorios,bebe,adulto,hogar">
+    <link rel="stylesheet" href="assets/scss/estilos.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>pañalera cataflora</title>
 </head>
-<link rel="stylesheet" href="style.css" type="text/css">
-<body>
-    <div id="contacto">
-        <header id="miheader">
-  <h1>contactos del local </h1>
 
-    <nav>
+<body>
+    <div id="grid">
+        <header id="miheader">
+            <h1>contactos del local </h1>
+    <img src="img/logo.jpeg" height="200px" width="200px" alt="logo local">   
+    <nav class="navegacion">
+        <div class="toogle-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <img src="img/bx-menu.svg" alt="">
+        </label>
+        </div>
 <ul>
     <li><a href="index.html">pagina principal</a></li>
-    <li><a href="informacion.html">informacion</a></li>
     <li><a href="ubicacion.html">ubicacion</a></li>
     <li><a href="productos.html">productos</a></li>
     <li><a href="menu.html">menu</a></li>
-    <li><a href="contactos.html">contacto</a></li>
+    <li><a href="contactos.html">contactos</a></li>
 </ul>
 </nav>
 </header>
-<section id="formulario">
 
+<h2 class="ubi">datos de contacto de nuestro local</h2>
+
+<section id="formulario">
 <form action="" method="get"><multipart/form-data>
     <label for="nombre">ingrese su nombre</label>
     <input type="text" placeholder="esbribe tu nombre" id="nombre">
@@ -32,30 +43,36 @@
     <label for="apellido">ingrese su apellido</label>
     <input type="text" placeholder="escribe tu apellido" id="apellido">
     <br><br>
-<label for="domicilio">ingrese su domicilio</label>
+    <label for="domicilio">ingrese su domicilio</label>
     <input type="text" placeholder="escribe tu domicilio" id="domicilio">
     <br><br>
-<label for="localidad">ingrese su localidad</label>
+    <label for="localidad">ingrese su localidad</label>
     <input type="text" placeholder="escribe tu localidad" id="localidad">
     <br><br>
-<label for="codigo postal">ingrese su codigo postal</label>
+    <label for="codigo postal">ingrese su codigo postal</label>
     <input type="text" placeholder="escribe tu cp" id="codigo postal">
     <br><br>
-    
     <input type="submit">
 </section>
-    
-<footer id="mifooter">Pañalera Cataflora
-Realizamos envios, consultanos sin compromiso!
 
-Bebés
-Belleza y Cuidado Personal
-Salud y Equipamiento Médico
-Cómo comprar
- 
-Tel: (11) 40909514
-infocataflora@gmail.com
-Entre rios 1076 Piñeyro Buenos Aires></footer>
+<div class="contacto">
+    <div id="izquierda">
+        <p>
+            telefono <strong>40909514<br></strong>
+            celular <strong>1164920022</strong><br>
+            email <strong>delafuentetiago01@gmail.com</strong><br>
+            instagram <strong>pañaleracataflora</strong><br>
+            facebook <strong>pañalera cataflora</strong><br>
+        </p>
+    </div>
 </div>
+
+ <footer class="mifooter"> 
+    <p>
+  Realizamos envios, consultanos sin compromiso! Tel: (11) 40909514
+  infocataflora@gmail.com
+   </p>
+ </footer>
+ </div>
 </body>
 </html>

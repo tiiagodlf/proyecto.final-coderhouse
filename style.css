@@ -7,262 +7,582 @@ html,body {
     width: 100%;
     height: 100vh;
 }
-    
-
 .padre{
     
-display: grid;
-grid-template-areas: 
-"miheader miheader"
-"conocenos conocenos"
-"novedades novedades"
- "mifooter mifooter"
-;
-
-grid-template-columns: auto 250px;
-grid-template-rows: 80px 1fr 1fr 60px;
-grid-row-gap: 15px ;
-grid-column-gap:15px ;
-width: 100%;
-height: 100vh;
-box-sizing: border-box;
-
-}
-
-
-
-header {
-    grid-area: miheader;
-    background-color: lightskyblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation-name: color ;
-    animation-duration: 3s;
-    animation-iteration-count: 3;
-    
-
- }
- 
- @keyframes color{
-    0% {
-        background-color: gray;
-    }
-    100% {
-        background-color: cornflowerblue;
-    }
- }
-
-header h1 {
-    font-size: 20px;
-    color: black;
-    
-
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-header nav ul li a {
-    font-size: 20px;
-    text-decoration:overline;
-    text-align: left;
-    
-    
-
-}
-
-nav ul li a:hover {color: black;
-    
-}
-    
-    
-
-
-
-
-
-header nav ul li {
-    display: inline-block;
-list-style: none;
-margin: 0 20px;
-
-}
-
-footer {
-    grid-area: mifooter;
-    background-color: lightsteelblue;
-    font-size: 20px;
-    transition: border-radius 3s;
-    transition-duration: 2s;
-    
-}
-footer:hover {
-    border-radius: 100%;
-}
-
-
-section#conocenos {
-    grid-area: conocenos;
-    background-color:darkkhaki
+    display: grid;
+    grid-template-areas: 
+    "miheader"
+    "horarios"
+    "conocenos"
+    "mifooter"
     ;
-   
     
+    grid-template-columns: auto;
+    grid-template-rows: 80px 1fr 1fr 60px;
+    grid-row-gap: 15px ;
+    grid-column-gap:15px ;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
 
+.padre {
+    background-image: url(img/cataflora.jpg);
 }
 
 
+.navegacion {
+list-style: none;
+background-color: aliceblue;
+}
 
+.navegacion ul li {
+    display: inline-block;
+}
 
-
-
- 
-
-
-
-section#novedades {
-    grid-area: novedades;
-    background-color: cadetblue;
-    transition: border-radius 3s, width 10s;
-    transition-duration: 2s;
-    
-
-} 
-#novedades:hover {
-    border-radius: 100%;
-    width: 600px;
-    
-    
-    
+.navegacion ul li a {
+    display: block;
+    padding: 10px 20px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 
 }
   
-section#formulario {
-    border-style: groove;
-    color:black;
-    
-    
+header {
+background-color:deepskyblue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-style: groove;  
+list-style: none;
+padding: 0;
+
 }
-section#formulario:hover {
+
+header nav li a {
 color: black;
-}
-
-.contacto {
-    display: flex;
-
-}
-
-  section#pañales {
-    background-color:aqua;
-    animation-name: mover;
-    animation-duration: 5s;
-    animation-iteration-count: 3;
-
-}
-  @keyframes mover {
-    0% {
-        transform:translate(0%)
-    }
-    100% {
-        transform: translate(100%);
-    }
- 
-   }
- 
-
- @media screen and (min-width: 360px) and (max-width: 760px) { 
-.padre  {
-    display: grid;
-grid-template-areas: 
-"miheader"
-"conocenos"
-"novedades"
- "mifooter"
-;
-
-
-background-color: gray;
-font-family: Georgia, 'Times New Roman', Times, serif;
-padding: 0%;
+list-style: none;
+box-sizing: border-box;
+text-decoration: none !important;
+display: block;
 
 
 }
 
-section#conocenos {
-    background-color:darkorange;
-    
-    
+header img {
+    width: 300px;
+    padding: 10px;
 }
-header  {
-    background-color: gray;
-    text-align: left;
-    flex-direction: column;
-    
-    
-    
-    
-}
-.contacto {
+
+ nav li a:hover {
     background-color: aquamarine;
-
+    color:darkkhaki;
+    list-style: none;
+    text-decoration: none !important;
+    
+    
 }
 
-.informacion {
-    background-color: gray;
+
+.container-lg {
+    text-align: center;
+    background-color:cadetblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer p  {
+    background-color: darkgray;
+    font-size: 20px;
+   
     
 }
 footer {
-    background-color:aquamarine;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mifooter {
+text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+
+.container-lg img {
+border-radius: 30%;
+animation-name: animacion;
+animation-duration:8s;
+padding: 5px;
+}
+
+section#formulario {
+    color:black;
+    margin: 0;
+    width: 100%;
+    background-image: url(img/cataflora.jpg);
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+section#formulario input {
+    padding: 5px;
+    border-color: cadetblue;
+
+}
+
+section#formulario:hover {
+color:cornflowerblue;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: cadetblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: cadetblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ubi {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: cadetblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.produ {
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.parrafo-1 {
+    color: cadetblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+@keyframes animacion {
+ 0%{
+    transform: scale(1)
+}
+25%{
+    transform: scale(0.5)
+}
+50%{
+    transform: scale(1.1)
+}
+
+100%{
+    transform: scale(1)
+}
+}
+
+
+p {
+    font-size: 20;
+    color: black;
+
+}
+
+
+.contacto p {
+    width: 300px;
+    height: auto;overflow: hidden;
+    border: 1px solid;
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background-color:cornflowerblue;
     
 }
 
-  }
-
-  @media screen and (min-width: 760px) and (max-width: 1020px) {
-    .padre  {
-        display: grid;
-    grid-template-areas: 
-    "miheader"
-    "conocenos"
-    "novedades"
-     "mifooter"
-    ;
-    
-    
-    background-color: gray;
+footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
     
-    
-    }
-    section#conocenos {
-        background-color:khaki;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
-        
-    }
-    header {
-        background-color:cadetblue;
-        text-align: left;
-        font-family: fantasy;
-        
-        
-        
-    }
-    .contacto {
-        background-color: gray;
-        font-family: fantasy;
-        text-align: justify;
-    
-    }
-    
-    .informacion {
-        background-color:cornsilk;
-        font-family: fantasy;
-        
-    }
-    footer {
-        background-color:gray;
-        
-    }
+}
+h1 {
+    color:cornflowerblue;
+}
 
-  }
+
+.menu {
+    position: relative;
+}
+
+
+.horarios  {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.horarios li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.horarios p {
+    color: blue;
+    text-decoration:underline;
+    padding: 2px;
+    margin: 2px;
+}
+
+.toogle-menu {
+    width: 40px;
+    position: absolute;   
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    filter: invert(1);
+   
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+.ubicacion-local {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: cadetblue;
+    text-align: center;
+    
+}
+
+.conocenos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.nosotros { 
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: fantasy;
+    
+}
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 760px) {
+
+.toogle-menu {
+ width: 40px;
+ position:fixed;   
+ top: 1rem;
+ right: 1rem;
+ cursor: pointer;
+ filter: invert(1);
+ display: block;
+ cursor: pointer;
+
+
+}    
+
+
+
+h1 {
+    color: burlywood;
+} 
+
+.header {
+    background-color:darkslategrey;
+     font-family: fantasy;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container {
+    background-color:cornflowerblue;
+}
+
+header nav ul {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+}
+
+.header nav ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.header nav ul li:last-child {
+    background: none;
+}
+
+#check:checked ~ ul {
+    left: 0;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px;
+   
+}
+
+header nav ul li a:hover {
+    color: black;
+}
+
+footer h1 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.padre {
+    background-color: darkcyan;
+    
+}
+
+.padre img {
+    background-color: darkcyan;
+    width: 100%;
+    
+}
+
+.container-lg {
+    background-color:cornflowerblue;
+}
+.container-lg img {
+    width: 100%;
+}
+
+.horarios {
+    background-color: cadetblue;
+}
+
+.horarios li a {
+    font-size: 20px;
+}
+
+.grid {
+background-color: cadetblue;
+}
+
+.contacto p {
+
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ubi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.produ {
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.parrafo-1 {
+    color:cornflowerblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ubicacion-local {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: cornflowerblue;
+    text-align: center;
+    
+}
+    
+}
+
+@media screen and (min-width: 760px) and (max-width: 1020px){
+
+.toogle-menu {
+    width: 40px;
+    position:fixed;   
+     top: 1rem;
+     right: 1rem;
+    cursor: pointer;
+    filter: invert(1);
+    display: block;
+    cursor: pointer;
+       
+}    
+
+
+header nav ul {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+}
+
+.header nav ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.header nav ul li:last-child {
+    background: none;
+}
+
+
+.container img {
+    width: 100%;
+}
+
+.container {
+    background-color:cadetblue;
+}
+
+footer h1 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    background-color: black;
+} 
+
+.padre {
+    background-color: darkcyan;
+    
+}
+
+.padre img {
+    background-color: darkcyan;
+    width: 100%;
+    
+}
+.navegacion {
+    
+}
+
+.container-lg {
+    background-color:coral;
+}
+
+.container-lg img {
+    width: 100%;
+}
+
+.horarios {
+    background-color: cadetblue;
+}
+
+.horarios li a {
+    font-size: 20px;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ubi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.produ {
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.parrafo-1 {
+    color:cornflowerblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ubicacion-local {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: cornflowerblue;
+    text-align: center;
+    
+}
+
+
+}
+
+@media screen and (min-width: 1021px) {
+    .toogle-menu {
+        display: none;
+    }
+}
  

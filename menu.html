@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
+    <meta name="description" content="venta de panales a todo publico">
+    <meta name="keywords" content="panales,accesorios,bebe,adulto,hogar">
+    <link rel="stylesheet" href="assets/scss/estilos.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>pañalera cataflora</title>
 </head>
-<link rel="stylesheet" href="style.css" type="text/css">
 <body>
-    
-    <div id="menu">
-        <header id="miheader">
-    <h1>menu del local</h1>
-   <nav>
+  <div class="padre">
+<div class="menu">
+    <header id="miheader">
+      <h1>menu</h1>
+      <img src="img/logo.jpeg" class="img-fluid" height="200px" width="200px" alt="logo local">
+    <nav class="navegacion">
+      <div class="toogle-menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <img src="img/bx-menu.svg" alt="">
+    </label>
+    </div>
  <ul>
     <li><a href="index.html">pagina principal</a></li>
-    <li><a href="informacion.html">informacion</a></li>
     <li><a href="ubicacion.html">ubicacion</a></li>
     <li><a href="productos.html">productos</a></li>
     <li><a href="menu.html">menu</a></li>
@@ -23,17 +32,32 @@
 </ul>
 </nav>
 </header>
-<footer id="mifooter">Pañalera Cataflora
-    Realizamos envios, consultanos sin compromiso!
-    
-    Bebés
-    Belleza y Cuidado Personal
-    Salud y Equipamiento Médico
-    Cómo comprar
-     
-    Tel: (11) 40909514
-    infocataflora@gmail.com
-    Entre rios 1076 Piñeyro Buenos Aires</footer>
+<h2 class="conocenos">conocenos</h2>
+
+  <div class="horarios">
+  <img src="img/envios.jpg" class="img-fluid" height="400px" width="500px" alt="horarios">
+  
+  <img src="img/horarios.jpeg"class="img-fluid" height="400px" width="500px"  alt="horarios">
+
+  <img src="img/horarios2.jpeg" class="img-fluid" height="400px" width="500px" alt="horarios">
+
+</div>
+
+<div class="nosotros">
+<p>
+  podes encontrar todos nuestros productos en nuestra seccion <a href="productos.html">productos</a>
+</p>
+ <p>
+  en nuestra seccioncontactos podras hacer todas tus consultas <a href="contactos.html">contactos</a>
+</p>
+</div>
+
+
+<footer class="mifooter"> 
+    <p>
+    Realizamos envios, consultanos sin compromiso! Tel: (11) 40909514
+    infocataflora@gmail.com</p>
+  </footer>
 </div>
 </body>
 </html>
