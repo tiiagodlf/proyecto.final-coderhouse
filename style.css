@@ -12,8 +12,8 @@ html,body {
     display: grid;
     grid-template-areas: 
     "miheader"
+    "horarios"
     "conocenos"
-    "novedades"
     "mifooter"
     ;
     
@@ -28,7 +28,7 @@ html,body {
 }
 
 .padre {
-    background-color: cadetblue;
+    background-image: url(img/cataflora.jpg);
 }
 
 
@@ -55,6 +55,7 @@ background-color:deepskyblue;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 border-style: groove;  
 list-style: none;
+padding: 0;
 
 }
 
@@ -70,6 +71,7 @@ display: block;
 
 header img {
     width: 300px;
+    padding: 10px;
 }
 
  nav li a:hover {
@@ -118,22 +120,61 @@ padding: 5px;
 section#formulario {
     color:black;
     margin: 0;
-    width: 400px;
-    background-color:dodgerblue;
+    width: 100%;
+    background-image: url(img/cataflora.jpg);
     padding: 10px;
     border-radius: 3px;
     outline: none;
     border: 0;
-    font-size: 15px;
+    font-size: 20px;
+    text-align: center;
 
 }
+
 section#formulario input {
     padding: 5px;
     border-color: cadetblue;
 
 }
+
 section#formulario:hover {
-color: white;
+color:cornflowerblue;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: cadetblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: cadetblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ubi {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: cadetblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.produ {
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.parrafo-1 {
+    color: cadetblue;
+    text-align: center;
+    font-size: 25px;
 }
 
 @keyframes animacion {
@@ -159,6 +200,20 @@ p {
 
 }
 
+
+.contacto p {
+    width: 300px;
+    height: auto;overflow: hidden;
+    border: 1px solid;
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background-color:cornflowerblue;
+    
+}
+
 footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
@@ -168,23 +223,17 @@ h1 {
     color:cornflowerblue;
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
 
 .menu {
     position: relative;
 }
 
-.contacto p {
-    background-color: cadetblue;
-    
-}
 
-.horarios {
-    background-color: cadetblue;
+.horarios  {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+
 }
 
 .horarios li a {
@@ -214,6 +263,31 @@ h2 {
 
 img {
     max-width: 100%;
+}
+
+.ubicacion-local {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: cadetblue;
+    text-align: center;
+    
+}
+
+.conocenos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.nosotros { 
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: fantasy;
+    
 }
 
 
@@ -318,6 +392,59 @@ footer h1 p {
 .horarios li a {
     font-size: 20px;
 }
+
+.grid {
+background-color: cadetblue;
+}
+
+.contacto p {
+
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ubi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.produ {
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.parrafo-1 {
+    color:cornflowerblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ubicacion-local {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: cornflowerblue;
+    text-align: center;
+    
+}
     
 }
 
@@ -405,6 +532,50 @@ h1 {
     font-size: 20px;
 }
 
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ubi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color:cornflowerblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.produ {
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.parrafo-1 {
+    color:cornflowerblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ubicacion-local {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: cornflowerblue;
+    text-align: center;
+    
+}
 
 
 }

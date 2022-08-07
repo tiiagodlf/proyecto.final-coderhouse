@@ -52,3 +52,52 @@ footer p  {
     box-sizing: border-box;
 }
 }
+
+.horarios  {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+  
+&.horarios li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+  
+&.horarios p {
+    color: blue;
+    text-decoration:underline;
+    padding: 2px;
+    margin: 2px;
+}
+}
+
+section#formulario {
+    color:black;
+    margin: 0;
+    width: 100%;
+    background-image: url(img/cataflora.jpg);
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+
+
+
+&section#formulario input {
+    padding: 5px;
+    border-color: cadetblue;
+
+}
+
+&section#formulario:hover {
+color:cornflowerblue;
+}
+}
+
+
+
+
+
